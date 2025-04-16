@@ -1,0 +1,101 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* General */
+body {
+    background-color: rgb(254, 251, 247);
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 16px 16px 16px;
+}
+
+h2 {
+    padding-top: 76px;
+    font-family: Quicksand, Arial;
+    font-weight: 500;
+}
+
+p {
+    font-family: Fira Code, Arial;
+}
+
+/* Header */
+.header {
+    background-color: rgb(254, 251, 247);
+    position: fixed;
+    top: 0;
+    padding-top: 16px;
+    height: 60px;
+    left: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    height: 24px;
+    align-items: center;
+}
+
+.navigation a {
+    display: inline-block;
+    font-family: Quicksand, Arial;
+    /* #ffd6e5 */
+    color: #c35a80;
+    font-weight: 450;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.header-logo {
+    height: 60px;
+    margin-right: 32px;
+}
+
+/* contacts */
+.contact-info {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.contact-icons {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    margin-left: 16px;
+    height: 24px;
+    filter: invert(72%) sepia(30%) saturate(5729%) hue-rotate(299deg) brightness(79%) contrast(92%);
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    flex: 1;
+    column-gap: 32px;
+    row-gap: 32px;
+    justify-content: space-between;
+}
+
+
+.project-img {
+    width: 100%;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project-des {
+    font-size: 16px;
+    font-weight: 400;
+}
