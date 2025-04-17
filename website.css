@@ -2,9 +2,13 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --main-bg-color: rgb(254, 251, 247);
+}
+
 /* General */
 body {
-    background-color: rgb(254, 251, 247);
+    background-color: var(--main-bg-color);
     margin: 0;
 }
 
@@ -15,10 +19,14 @@ body {
 
 h1 {
     padding-top: 76px;
-    font-family: Quicksand, Arial;
     font-weight: 500;
     font-size: 36px;
     margin: 0;
+}
+
+/* Fonts */
+body, h1, .navigation a {
+    font-family: Quicksand, Arial;
 }
 
 p {
@@ -27,7 +35,7 @@ p {
 
 /* Header */
 .header {
-    background-color: rgb(254, 251, 247);
+    background-color: var(--main-bg-color);
     position: fixed;
     top: 0;
     padding-top: 16px;
@@ -41,7 +49,6 @@ p {
 .header-logo {
     height: 60px;
     margin-right: 32px;
-    transition: 0.15s;
 }
 
 .header-logo:hover {
@@ -56,19 +63,21 @@ p {
 
 .navigation a {
     display: inline-block;
-    font-family: Quicksand, Arial;
     color: #c35a80;
     font-weight: 450;
     margin-right: 16px;
     text-decoration: none;
-    transition: 0.15s;
 }
 
 .navigation a:hover {
     color: #ffd6e5;
 }
 
-
+.header-logo
+.navigation a,
+.contact-icons {
+    transition: 0.15s;
+}
 
 /* contacts */
 .contact-info {
@@ -87,7 +96,6 @@ p {
     margin-left: 16px;
     height: 24px;
     filter: invert(72%) sepia(30%) saturate(5729%) hue-rotate(299deg) brightness(79%) contrast(92%);
-    transition: 0.15s;
 }
 
 .contact-icons:hover {
@@ -102,7 +110,6 @@ p {
     row-gap: 32px;
     justify-content: space-between;
 }
-
 
 .project-img {
     width: 100%;
