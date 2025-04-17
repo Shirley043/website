@@ -13,10 +13,12 @@ body {
     padding: 0 16px 16px 16px;
 }
 
-h2 {
+h1 {
     padding-top: 76px;
     font-family: Quicksand, Arial;
     font-weight: 500;
+    font-size: 36px;
+    margin: 0;
 }
 
 p {
@@ -36,6 +38,16 @@ p {
     align-items: center;
 }
 
+.header-logo {
+    height: 60px;
+    margin-right: 32px;
+    transition: 0.15s;
+}
+
+.header-logo:hover {
+    opacity: 0.5;;
+}
+
 .navigation {
     display: flex;
     height: 24px;
@@ -45,17 +57,18 @@ p {
 .navigation a {
     display: inline-block;
     font-family: Quicksand, Arial;
-    /* #ffd6e5 */
     color: #c35a80;
     font-weight: 450;
     margin-right: 16px;
     text-decoration: none;
+    transition: 0.15s;
 }
 
-.header-logo {
-    height: 60px;
-    margin-right: 32px;
+.navigation a:hover {
+    color: #ffd6e5;
 }
+
+
 
 /* contacts */
 .contact-info {
@@ -74,6 +87,11 @@ p {
     margin-left: 16px;
     height: 24px;
     filter: invert(72%) sepia(30%) saturate(5729%) hue-rotate(299deg) brightness(79%) contrast(92%);
+    transition: 0.15s;
+}
+
+.contact-icons:hover {
+    filter: invert(88%) sepia(51%) saturate(1537%) hue-rotate(287deg) brightness(118%) contrast(111%);
 }
 
 /* Projects */
